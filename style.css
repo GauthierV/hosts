@@ -1,0 +1,58 @@
+body {
+
+    background-color: darkgoldenrod;
+}
+
+main {
+    background-color: #885f0830;
+}
+/*Partie header*/
+.header {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Container du formulaire*/
+
+.input_container {
+
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 30%;
+    padding: 30px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+
+/*input et label*/
+.input_container input {
+
+    margin: 10px 0px;
+}
+
+label {
+
+    margin-top: 5px;
+}
+
+
+span {
+
+
+    padding-right: 10px;
+}
+
+
+#button {
+    margin-top: 20px;
+    width: 20%;
+}
+
