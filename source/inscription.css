@@ -1,11 +1,4 @@
-body {
 
-    background-color: darkgoldenrod;
-}
-
-main {
-    background-color: #885f0830;
-}
 /*Partie header*/
 .header {
     padding: 30px;
@@ -14,6 +7,17 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+body {
+
+    background-color: darkgoldenrod;
+}
+
+main {
+    background-color: #885f0830;
+}
+
 
 /*Container du formulaire*/
 
@@ -55,4 +59,5 @@ span {
     margin-top: 20px;
     width: 20%;
 }
+
 
