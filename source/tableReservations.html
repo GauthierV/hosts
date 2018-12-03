@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="tableReservations.css">
 </head>
 <body>
-<div class="container border rounded">
+<!--Cette div sert à afiicher la navbar-->
+<div id="nav-placeholder"></div>
+
+<div class="container border rounded listeResa">
     <h1 class="text-center">Vos reservations en cours</h1>
 
     <div class="form-inline">
@@ -59,4 +62,12 @@
 
 </body>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<!--La fonction qui import la navbar-->
+<script>
+    $(function(){
+        $("#nav-placeholder").load("nav.html");
+    });
+</script>
 </html>

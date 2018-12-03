@@ -1,0 +1,36 @@
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container-client {
+
+
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 30%;
+    padding: 30px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+#container-reservation{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 30%;
+    padding: 30px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+
+}
