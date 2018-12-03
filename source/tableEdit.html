@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modification d'une table</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="creationTable.css">
+</head>
+<body>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="tableName">Nom de votre restaurant personnel</label>
+            <input type="text" class="form-control" id="tableName" placeholder="Nom">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Addresse</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Adresse">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Complément d'adresse</label>
+            <input type="text" class="form-control" id="inputAddress2">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Ville</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="departement">Département</label>
+                <select id="departement" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="codePostale">Code postale</label>
+                <input type="text" class="form-control" id="codePostale">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description">Description : </label>
+            <textarea type="text" class="form-control" id="description"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="menu">Menu : </label>
+            <textarea type="text" class="form-control" id="menu"></textarea>
+        </div>
+
+        <label for="prixMoyen">Prix moyen : </label>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">€</span>
+            </div>
+            <input type="text" class="form-control" id="prixMoyen">
+
+        </div>
+
+
+        <div class="form-group">
+            <label for="image">Photo</label>
+            <input type="file" class="form-control-file" id="image">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Modifiez votre table</button>
+    </form>
+
+
+</div>
+</body>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</html>

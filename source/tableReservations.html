@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tableReservations.css">
+</head>
+<body>
+<div class="container border rounded">
+    <h1 class="text-center">Vos reservations en cours</h1>
+
+    <div class="form-inline">
+        <div class="col-md-8"></div>
+        <label for="trier" class="col-md-2">Trier par : </label>
+        <select class="form-control col-md-2" id="trier">
+            <option>Date</option>
+            <option>Nombres de personnes</option>
+            <option>Accepté</option>
+            <option>Refusé</option>
+            <option>A valider</option>
+        </select>
+    </div>
+
+    <div class="container reservation border rounded">
+        <div class="row">
+            <div class="col">
+                Reservation au nom de :
+            </div>
+        </div>
+        <div class="row">
+            <p class="col">Date : </p>
+            <p class="col">Nombres de personnes : </p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn-info">Accepter</button>
+                <button class="btn-danger">Refuser</button>
+            </div>
+        </div>
+    </div>
+    <div class="container reservation border rounded">
+        <div class="row">
+            <div class="col">
+                Reservation au nom de :
+            </div>
+        </div>
+        <div class="row">
+            <p class="col">Date : </p>
+            <p class="col">Nombres de personnes : </p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn-danger">Annuler</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</html>
