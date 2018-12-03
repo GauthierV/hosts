@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 Création du projet Hosts
 trop cool
+=======
+Projet HTML et CSS Création du projet Hosts
+>>>>>>> a28e2f2b0eb8acd24f2c35de2ad4d2918f1e8374
