@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Création d'une table</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="creationTable.css">
 </head>
 <body>
+<!--Cette div sert à afiicher la navbar-->
+<div id="nav-placeholder"></div>
 <div class="container border rounded">
     <form>
         <div class="form-group">
@@ -68,5 +70,14 @@
 
 </div>
 </body>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
+<script src="../bootstrap/jquery-3.3.1.min.js"></script>
+<!--La fonction qui import la navbar-->
+<script>
+    $(function(){
+        $("#nav-placeholder").load("../nav.html");
+    });
+</script>
 </html>
