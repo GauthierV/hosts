@@ -1,4 +1,7 @@
-footer{
+footer {
     margin-top: 1em;
     margin-bottom: 0em;
+}
+.nav-footer{
+    width: 100%;
 }

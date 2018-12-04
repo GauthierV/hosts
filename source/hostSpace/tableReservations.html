@@ -60,15 +60,20 @@
     </div>
 </div>
 
+<div id="footer-placeholder"></div>
+
 </body>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 
 <!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
 <script src="../bootstrap/jquery-3.3.1.min.js"></script>
-<!--La fonction qui importe la navbar-->
+<!--La fonction qui import la navbar-->
 <script>
-    $(function(){
+    $(function () {
         $("#nav-placeholder").load("/source/nav.html");
+    });
+    $(function () {
+        $("#footer-placeholder").load("/source/footer.html");
     });
 </script>
 </html>

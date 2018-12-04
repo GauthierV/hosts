@@ -39,6 +39,8 @@
         </div>
     </div>
 </div>
+<div id="footer-placeholder"></div>
+
 </body>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 
@@ -46,8 +48,11 @@
 <script src="../bootstrap/jquery-3.3.1.min.js"></script>
 <!--La fonction qui import la navbar-->
 <script>
-    $(function(){
+    $(function () {
         $("#nav-placeholder").load("/source/nav.html");
+    });
+    $(function () {
+        $("#footer-placeholder").load("/source/footer.html");
     });
 </script>
 </html>
