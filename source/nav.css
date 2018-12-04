@@ -1,3 +1,7 @@
+navbar-nav {
+    width: 100px;
+    height: 80px;
+}
 nav {
     margin-bottom: 1em;
 }

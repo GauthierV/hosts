@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-<div id="container">
-    <form method="post" class="form-group" action="">
-        <div class="input_container">
-            <h2>Modifier vos reservations</h2>
+<div id="nav-placeholder"></div>
+    <div id="container">
+        <form method="post" class="form-group" action="">
+            <div class="input_container">
+                <h2>Modifier vos reservations</h2>
 
 
+<<<<<<< HEAD
             <button type="button" id="button"> Modifier</button>
         </div>
     </form>
@@ -26,5 +28,19 @@
         $("#nav-placeholder").load("../nav.html");
     });
 </script>
+=======
+                <button type="button" id="button"> Modifier</button>
+            </div>
+        </form>
+    </div>
+>>>>>>> fccc33e2e5fdee3f5c6ea8d46104fdf244e25dd3
 </body>
+    <!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
+    <script src="bootstrap/jquery-3.3.1.min.js"></script>
+    <!--La fonction qui import la navbar-->
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
 </html>
