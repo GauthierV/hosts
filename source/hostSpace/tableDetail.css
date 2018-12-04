@@ -2,31 +2,27 @@
     margin-top: 2em;
 }
 
-.row card-body{
-    display: flex;
-}
-
 .card-footer{
     margin: 15px;
 }
 
-h1{
+#tableName{
     letter-spacing: 2px;
     text-shadow: 2px 2px 3px grey;
-    font-size: 32px;
+    font-size: 31px;
 }
 
-h2 {
+#title {
     color: rgb(53, 52, 52);
     letter-spacing: 1px;
-    font-size: 24px;
+    font-size: 27px;
     font-weight: bold;
 }
 
-h3{
+#menu{
     color: rgb(53, 52, 52);
     letter-spacing: 1px;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
 }
 
