@@ -2,41 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Edit reservation</title>
+    <title>Détail de la table</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="editReservation.css">
 </head>
 <body>
+
+<!--Cette div sert à afficher la navbar-->
 <div id="nav-placeholder"></div>
-<div id="container">
-    <form method="post" class="form-group" action="">
-        <div class="input_container">
-            <h2>Modifier vos coordonnés</h2>
-            <label for="civilite">Civilité</label>
-            <span class="content_radio">
-                    <input type="radio" name="civilite" id="civilite" value="M."> M.
-                    <input type="radio" name="civilite" value="Mme"> Mme
-                </span>
-            <label for="nom"> Nom </label>
-            <input type="text" id="nom" name="nom" value="nom">
 
-            <label for="prenom"> Prénom </label>
-            <input type="text" id="prenom" name="prenom" value="prenom">
-
-            <label for="tel"> Téléphone </label>
-            <input type="number" id="tel" name="tel" value= 0606060606>
-
-            <a href="editInfos.html"><button type="button" id="button"> Modifier</button></a>
+<div class="container detail-table">
+    <div class="card">
+        <h1 class="text-center card-header" id="tableName">Détail d'une table</h1>
+        <div class="row card-body">
+            <img src="../../assets/images/dindemenu.jpg" class="col-md-4">
+            <div class="col-md-8">
+                <h2 id="title">Le cochon qui fume</h2>
+                <p>Bacon ipsum dolor amet buffalo turducken swine frankfurter tenderloin venison. Turducken filet mignon
+                    ball tip cupim meatloaf, kevin turkey prosciutto jerky andouille hamburger pork strip steak short
+                    ribs.
+                    Brisket drumstick sirloin, pig flank meatloaf pastrami venison tail shoulder pork alcatra rump pork
+                    belly. Beef ribs ham hock pork kielbasa meatloaf. Capicola burgdoggen chicken, cow short loin jerky
+                    filet mignon kevin short ribs.</p>
+                <h3 id="menu">Menu :</h3>
+                <p>Des trucs</p>
+            </div>
+            <div class="card-footer">
+                <form>
+                    <label for="dateDispo">Date disponible :</label>
+                    <input type="date" id="dateDispo">
+                    <label for="nombrePersonnes">Nombres de personnes :</label>
+                    <input type="number" id="nombrePersonnes" value="15">
+                    <button class="btn-primary" type="submit">Modifier</button>
+                </form>
+            </div>
         </div>
-    </form>
+        <div class="backgroundmap">
+            <h4>Localisez votre table !</h4>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d679.4716070806087!2d-0.8763230434664657!3d47.06207816737371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480646a381559aeb%3A0xea21c3e33efa19fc!2sCholet!5e0!3m2!1sen!2sfr!4v1543920043350" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>        </div>
+        </div>
+    </div>
 </div>
+</body>
+
 <div id="footer-placeholder"></div>
 
-</body>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 
 <!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
 <script src="../bootstrap/jquery-3.3.1.min.js"></script>
+<!--La fonction qui import la navbar-->
 <script>
     $(function () {
         $("#nav-placeholder").load("/source/nav.html");
@@ -45,24 +61,4 @@
         $("#footer-placeholder").load("/source/footer.html");
     });
 </script>
-<<<<<<< HEAD
-
-=======
-=======
-                <button type="button" id="button"> Modifier</button>
-            </div>
-        </form>
-    </div>
->>>>>>> fccc33e2e5fdee3f5c6ea8d46104fdf244e25dd3
-</body>
-    <div id="footer-placeholder"></div>
-        <!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
-        <script src="bootstrap/jquery-3.3.1.min.js"></script>
-        <!--La fonction qui import la navbar-->
-        <script>
-            $(function () {
-                $("#nav-placeholder").load("nav.html");
-            });
-        </script>
->>>>>>> origin/master
 </html>
