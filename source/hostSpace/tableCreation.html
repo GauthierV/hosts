@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Création d'une table</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="creationTable.css">
+    <link rel="stylesheet" href="tableCreation.css">
 </head>
 <body>
 <!--Cette div sert à afiicher la navbar-->
 <div id="nav-placeholder"></div>
-<div class="container border rounded">
+<div class="container create-table border rounded">
     <form>
         <div class="form-group">
             <label for="tableName">Nom de votre restaurant personnel</label>
@@ -66,9 +66,10 @@
 
         <button type="submit" class="btn btn-primary">Enregistrez votre table</button>
     </form>
-
-
 </div>
+
+<div id="footer-placeholder"></div>
+
 </body>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 
@@ -76,8 +77,11 @@
 <script src="../bootstrap/jquery-3.3.1.min.js"></script>
 <!--La fonction qui import la navbar-->
 <script>
-    $(function(){
-        $("#nav-placeholder").load("../nav.html");
+    $(function () {
+        $("#nav-placeholder").load("/source/nav.html");
+    });
+    $(function () {
+        $("#footer-placeholder").load("/source/footer.html");
     });
 </script>
 </html>

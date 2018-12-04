@@ -25,6 +25,12 @@ main {
 
 /*Bouton enregistrer*/
 
+#container-button {
+
+    justify-content: center;
+
+}
+
 .button {
 
     font-family: Poppins-Medium, serif;
@@ -79,7 +85,7 @@ h2 {
 /*Container du formulaire*/
 .input_container {
 
-    font-family: Poppins-Medium, sans-serif;
+    font-family: Poppins-Medium, serif;
     margin-top: 50px;
     border-radius: 10px;
     display: flex;
