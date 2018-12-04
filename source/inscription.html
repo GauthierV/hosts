@@ -59,4 +59,12 @@
     });
 </script>
 </body>
+    <!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
+    <script src="bootstrap/jquery-3.3.1.min.js"></script>
+    <!--La fonction qui import la navbar-->
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("nav.html");
+        });
+    </script>
 </html>
