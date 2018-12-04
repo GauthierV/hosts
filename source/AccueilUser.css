@@ -1,4 +1,4 @@
-/* CONTENER */
+/* PAGE */
 .page{
     display:flex;
     flex-wrap:wrap;
@@ -11,7 +11,6 @@
     width: 100%;
     background-image: grey;
 }
-
 
 /* HEADER */
 
@@ -32,21 +31,21 @@ h1{
 
 /* NAV BAR */
 
-.navbar{
-    width: 100%;
-    height: 80px;
-    background-color: rgb(47, 47, 48);
-    display:flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-}
+/*.navbar{*/
+    /*width: 100%;*/
+    /*height: 80px;*/
+    /*background-color: rgb(47, 47, 48);*/
+    /*display:flex;*/
+    /*align-items: center;*/
+    /*align-content: center;*/
+    /*justify-content: space-around;*/
+/*}*/
 
 
-.navbar :hover{
-    background-color: grey;
-    padding: 16px 16px;
-}
+/*.navbar :hover{*/
+    /*background-color: grey;*/
+    /*padding: 16px 16px;*/
+/*}*/
 
 a{
     color: aliceblue;
@@ -84,15 +83,27 @@ a{
 
 
 /* SEARCH */
+
+.contener{
+    display: flex;
+    flex-direction: row;
+}
+
+h3{
+    text-align: center;
+}
 .recherche{
     background-color: #eeeeee;
     border-style: solid;   
     border-width: 1px;   
     border-color: #dddddd;   
-    padding: 10px 10px 10px 10px; 
-    margin: 20px;
+    padding: 20px; 
+    margin: 30px;
+    width: 20%;
+    height: 50%;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .filtre-ville{
@@ -113,21 +124,27 @@ a{
     padding: 5px;
 }
 
-.button{
-    display:flex;
-    height: 20px;
-    width: 80px;
+.search{
+    height: 35px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.btn{
+    height: 30px;
     border: 1px solid yellow;
+    background-color: white;
+    font-weight: bold;
+    margin: 10px;
 }
 
 
 /* RESULT */
 
 .result{
-    display:flex;
+    display: flex;
     height: 600px;
-    flex-flow: column wrap;
-    align-items: flex-start;
     margin: 0px;
     padding: 0px;
     align-items: center;
@@ -140,15 +157,16 @@ a{
 h2{
     letter-spacing: 2px;
     font-weight: lighter;
-    
+    color: rgb(44, 44, 43);   
 }
 
 .article{ 
     display: flex;
     flex-direction: column;
+    flex-flow: column start;
     width: 30%;
-    height: 450px;
-    background-color: aliceblue;
+    height: 500px;
+    background-color: rgb(245, 243, 243);
     border: 2px solid grey;    
 }
 
