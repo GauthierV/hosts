@@ -4,78 +4,82 @@
     <meta charset="UTF-8">
     <title>User infos</title>
     <link rel="stylesheet" href="userInfos.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/source/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 <div id="nav-placeholder"></div>
 <h2> Mon espace client</h2>
 
-<!--Sous menu de navigation-->
 
-<!--
-<div class="top-bar">
-    <nav>
-        <a href="#">Mes informations personnel</a>
-        <a href="#">Mes réservations </a>
-    </nav>
-</div>
--->
+    <!--Sous menu de navigation-->
 
-<!--Affichage informations client -->
-<div id="container-client">
-    <div class="titre-container">
-        <h2>Mes informations personnel </h2>
+    <!--
+    <div class="top-bar">
+        <nav>
+            <a href="#">Mes informations personnel</a>
+            <a href="#">Mes réservations </a>
+        </nav>
     </div>
-    <div class="container-id">
-        <ul>
-            <li> Civilité :</li>
-            <li> Nom :</li>
-            <li> Prenom :</li>
-            <li> Telephone :</li>
-            <li> @ :</li>
-            <li> Cp :</li>
-            <li> Ville :</li>
-        </ul>
-        <a href="#">Modifier</a>
-    </div>
-</div>
+    -->
 
-<div id="container-reservation">
-    <div class="titre-container">
-        <h2>Mes Réservations </h2>
-    </div>
-    <article>
-        <div class="container-id">
-            <img src="../assets/images/table.png" alt="table">
-            <h4> Description: </h4>
-            <p class="description">.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Donec accumsan ante non commodo accumsan. Fusce ut posuere nisi,
-                sit amet lacinia tellus. Donec at arcu nec orci fermentum varius vel in ex.
-                Suspendisse laoreet purus non sem bibendum dictum. Sed dignissim ligula vitae
-                viverra dapibus. Nunc in urna venenatis, semper ipsum sed, porta orci.
-                Nulla congue lacus sit amet arcu convallis hendrerit.
-            </p>
-
-            <ul>
-                <li>Date:</li>
-                <li>Nombre de personne:</li>
-                <li>Lieux:</li>
-                <li>Prix:</li>
-            </ul>
-
-            <a href="#">Modifier</a>
-            <a href="#">Annuler</a>
+    <!--Affichage informations client -->
+    <div id="container-client">
+        <div class="titre-container">
+            <h2>Mes informations personnel </h2>
         </div>
-    </article>
+        <div class="container-id">
+            <ul>
+                <li> Civilité :</li>
+                <li> Nom :</li>
+                <li> Prenom :</li>
+                <li> Telephone :</li>
+                <li> @ :</li>
+                <li> Cp :</li>
+                <li> Ville :</li>
+            </ul>
+            <a href="#">Modifier</a>
+        </div>
+    </div>
 
+    <div id="container-reservation">
+        <div class="titre-container">
+            <h2>Mes Réservations </h2>
+        </div>
+        <article>
+            <div class="container-id">
+                <img src="../assets/images/table.png" alt="table">
+                <h4> Description: </h4>
+                <p class="description">.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec accumsan ante non commodo accumsan. Fusce ut posuere nisi,
+                    sit amet lacinia tellus. Donec at arcu nec orci fermentum varius vel in ex.
+                    Suspendisse laoreet purus non sem bibendum dictum. Sed dignissim ligula vitae
+                    viverra dapibus. Nunc in urna venenatis, semper ipsum sed, porta orci.
+                    Nulla congue lacus sit amet arcu convallis hendrerit.
+                </p>
+
+                <ul>
+                    <li>Date:</li>
+                    <li>Nombre de personne:</li>
+                    <li>Lieux:</li>
+                    <li>Prix:</li>
+                </ul>
+
+                <a href="#">Modifier</a>
+                <a href="#">Annuler</a>
+            </div>
+        </article>
+
+    </div>
 </div>
 <script src="bootstrap/jquery-3.3.1.min.js"></script>
 <!--La fonction qui import la navbar-->
-<script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
     $(function () {
-        $("#nav-placeholder").load("nav.html");
+        $("#nav-placeholder").load("/source/nav.html");
+    });
+    $(function () {
+        $("#footer-placeholder").load("/source/footer.html");
     });
 </script>
 </body>
