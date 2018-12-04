@@ -1,17 +1,88 @@
 /*Container du formulaire*/
 
+/*Bouton enregistrer*/
+
+#container-button {
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+
+    font-family: Poppins-Medium, serif;
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    min-width: 120px;
+    height: 50px;
+    border-radius: 2px;
+    position: relative;
+    z-index: 1;
+    background: #fcffee;
+    background: -webkit-linear-gradient(-135deg, #d6d6d6, #fcffee);
+    background: -o-linear-gradient(-135deg, #d6d6d6, #fcffee);
+    background: -moz-linear-gradient(-135deg, #d6d6d6, #fcffee);
+    background: linear-gradient(-135deg, #d6d6d6, #fcffee);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+
+/*TITRE*/
+#container-title {
+
+    display: block;
+    font-family: Poppins-Bold, sans-serif;
+    font-size: 25px;
+    color: rgba(87, 87, 87, 0.92);
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+h2 {
+
+    font-family: Poppins-Bold, sans-serif;
+}
+
+.content_radio label {
+
+    padding-right: 20px;
+}
+
+
+/*Container du formulaire*/
 .input_container {
 
+    font-family: Poppins-Medium, serif;
     margin-top: 50px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-    width: 30%;
+    border: 1px solid #858585;
+    width: 25%;
     padding: 30px;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background: #e7e7e7;
+    background: -webkit-linear-gradient(45deg, #c6c6c6, #e7e7e7);
+    background: -o-linear-gradient(45deg,  #c6c6c6, #e7e7e7);
+    background: -moz-linear-gradient(45deg,  #c6c6c6, #e7e7e7);
+    background: linear-gradient(45deg,  #c6c6c6, #e7e7e7);
 }
 
 

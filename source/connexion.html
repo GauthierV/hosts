@@ -22,16 +22,18 @@
                     <button type="button" id="button"> Enregistrer</button>
             </form>
         </div>
-
+    <div id="footer-placeholder"></div>
 </body>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
 <!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
 <script src="bootstrap/jquery-3.3.1.min.js"></script>
-<!--La fonction qui import la navbar-->
-<script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
     $(function () {
-        $("#nav-placeholder").load("nav.html");
+        $("#nav-placeholder").load("/source/nav.html");
+    });
+    $(function () {
+        $("#footer-placeholder").load("/source/footer.html");
     });
 </script>
 

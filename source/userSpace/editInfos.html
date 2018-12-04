@@ -6,75 +6,56 @@
     <link rel="stylesheet" href="editInfos.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </head>
-<body>
 <div id="nav-placeholder"></div>
-<<<<<<< HEAD
-<div id="container">
-    <form method="post" class="form-group" action="">
-        <div class="input_container">
-            <h2>Modifier vos coordonnés</h2>
-            <label for="civilite">Civilité</label>
-            <span class="content_radio">
-                <input type="radio" name="civilite" id="civilite" value="M."> M.
-                <input type="radio" name="civilite" value="Mme"> Mme
-            </span>
-            <label for="nom"> Nom </label>
-            <input type="text" id="nom" name="nom" value="nom">
-=======
+<main>
     <div id="container">
         <form method="post" class="form-group" action="">
             <div class="input_container">
-                <h2>Modifier vos coordonnés</h2>
-                <label for="civilite">Civilité</label>
+                <div id="container-title">
+                    <h2>Modifier vos informations</h2>
+                </div>
+
                 <span class="content_radio">
+                    <label for="hosts">Votre profile: </label>
+                    <input type="radio" name="profil" id="hosts" value="client"> Client
+                    <input type="radio" name="profil" value="Hosts"> Hosts
+                </span>
+
+                <span class="content_radio">
+                    <label for="civilite">Civilité: </label>
                     <input type="radio" name="civilite" id="civilite" value="M."> M.
                     <input type="radio" name="civilite" value="Mme"> Mme
                 </span>
                 <label for="nom"> Nom </label>
-                <input type="text" id="nom" name="nom" value="nom">
->>>>>>> fccc33e2e5fdee3f5c6ea8d46104fdf244e25dd3
+                <input type="text" id="nom" name="nom">
 
                 <label for="prenom"> Prénom </label>
-                <input type="text" id="prenom" name="prenom" value="prenom">
+                <input type="text" id="prenom" name="prenom">
 
                 <label for="tel"> Téléphone </label>
-                <input type="number" id="tel" name="tel" value= 0606060606>
+                <input type="number" id="tel" name="tel">
 
-<<<<<<< HEAD
-            <a href="editInfos.html"><button type="button" id="button"> Modifier</button></a>
-        </div>
-    </form>
-</div>
+                <div id="container-button">
+                    <button type="button" class="button" id="button"> Valider</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
 
+<div id="footer-placeholder"></div>
+</body>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 
 <!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
 <script src="../bootstrap/jquery-3.3.1.min.js"></script>
-<!--La fonction qui import la navbar-->
 <script>
-    $(function(){
-        $("#nav-placeholder").load("../nav.html");
+    $(function () {
+        $("#nav-placeholder").load("/source/nav.html");
+    });
+    $(function () {
+        $("#footer-placeholder").load("/source/footer.html");
     });
 </script>
-=======
-                <label for="cp"> Code postal </label>
-                <input type="number" id="cp" name="cp" value="44000">
 
-                <label for="ville"> Ville </label>
-                <input type="text" id="ville" name="ville" value="Nantes">
-
-                <button type="button" id="button"> Modifier</button>
-            </div>
-        </form>
-    </div>
->>>>>>> fccc33e2e5fdee3f5c6ea8d46104fdf244e25dd3
-</body>
-    <!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
-    <script src="bootstrap/jquery-3.3.1.min.js"></script>
-    <!--La fonction qui import la navbar-->
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("nav.html");
-        });
-    </script>
 </html>
