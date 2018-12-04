@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Inscription</title>
     <link rel="stylesheet" href="inscription.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
 <div id="nav-placeholder"></div>
@@ -12,7 +12,9 @@
     <div id="container">
         <form method="post" class="form-group" action="">
             <div class="input_container">
-                <h2>Nouveau ?</h2>
+                <div id="container-title">
+                    <h2>Nouveau ?</h2>
+                </div>
                 <label for="civilite">Civilité</label>
                 <span class="content_radio">
                     <input type="radio" name="civilite" id="civilite" value="M."> M.
@@ -27,12 +29,6 @@
                 <label for="tel"> Téléphone </label>
                 <input type="number" id="tel" name="tel">
 
-                <label for="cp"> Code postal </label>
-                <input type="number" id="cp" name="cp">
-
-                <label for="ville"> Ville </label>
-                <input type="text" id="ville" name="ville">
-
                 <label for="mail"> Email </label>
                 <input type="email" id="mail" name="mail">
 
@@ -41,20 +37,21 @@
 
                 <label for="mdpConfirm"> Confirmation du mot de passe </label>
                 <input type="password" id="mdpConfirm" name="mdpConfirm">
-
-                <button type="button" id="button"> Enregistrer</button>
+                <div>
+                    <button type="button" class="button" id="button"> Enregistrer</button>
+                </div>
             </div>
         </form>
     </div>
 </main>
 
-<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
 <!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
-<script src="../bootstrap/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/jquery-3.3.1.min.js"></script>
 <!--La fonction qui import la navbar-->
 <script>
-    $(function(){
+    $(function () {
         $("#nav-placeholder").load("nav.html");
     });
 </script>
