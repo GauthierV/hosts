@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <title>User infos</title>
     <link rel="stylesheet" href="userInfos.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
+<<<<<<< HEAD
+<div id="nav-placeholder"></div>
+<h2> Mon espace client</h2>
+=======
 <!--Cette div sert à afficher la navbar-->
 <div id="nav-placeholder"></div>
     <h2> Mon espace client</h2>
+>>>>>>> fccc33e2e5fdee3f5c6ea8d46104fdf244e25dd3
 
 <!--Sous menu de navigation-->
+
+<!--
 <div class="top-bar">
     <nav>
         <a href="#">Mes informations personnel</a>
         <a href="#">Mes réservations </a>
     </nav>
 </div>
+-->
 
 <!--Affichage informations client -->
 <div id="container-client">
@@ -45,7 +52,7 @@
     </div>
     <article>
         <div class="container-id">
-            <img src="./assets/table.png" alt="table">
+            <img src="../assets/images/table.png" alt="table">
             <h4> Description: </h4>
             <p class="description">.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -69,9 +76,20 @@
     </article>
 
 </div>
+<<<<<<< HEAD
+<script src="bootstrap/jquery-3.3.1.min.js"></script>
+<!--La fonction qui import la navbar-->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $("#nav-placeholder").load("nav.html");
+    });
+</script>
+=======
 
 </form>
 </div>
+>>>>>>> fccc33e2e5fdee3f5c6ea8d46104fdf244e25dd3
 </body>
     <!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
     <script src="bootstrap/jquery-3.3.1.min.js"></script>
