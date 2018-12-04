@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/source/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cotnact.css">
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<div class="container border rounded contact-form">
+
+    <h1 class="text-center">Merci de nous contacter :</h1>
+    <form>
+        <div class="form-group">
+            <label for="demande">Votre demande : </label>
+            <textarea type="text" class="form-control" id="demande"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="email">Adresse mail</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+</div>
+
+<div id="footer-placeholder"></div>
+</body>
+
+<script src="/source/bootstrap/js/bootstrap.min.js"></script>
+
+<!--On import Jquery afin d'afficher la navbar qui se trouve dans nav.html-->
+<script src="/source/bootstrap/jquery-3.3.1.min.js"></script>
+<!--La fonction qui import la navbar-->
+<script>
+    $(function () {
+        $("#nav-placeholder").load("/source/nav.html");
+    });
+    $(function () {
+        $("#footer-placeholder").load("/source/footer.html");
+    });
+</script>
+</html>
